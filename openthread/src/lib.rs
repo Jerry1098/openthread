@@ -370,6 +370,14 @@ impl<'a> OpenThread<'a> {
         state.ot.ieee_eui64
     }
 
+    /// Return the Network Prefix of the Thread network.
+    pub fn network_prefix(&self) ->[u8; 8]{
+        let mut ot = self.activate();
+        let state = ot.state();
+
+        state.ot.dataset_resources.dataset.mMeshLocalPrefix.m8
+    }
+
     /// Return the Thread network status.
     pub fn net_status(&self) -> NetStatus {
         let mut ot = self.activate();
