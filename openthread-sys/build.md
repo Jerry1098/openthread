@@ -7,13 +7,21 @@
 
 ## Install RISCV-Toolchain
 
-`git clone https://github.com/riscv/riscv-gnu-toolchain`
+~~`git clone https://github.com/riscv/riscv-gnu-toolchain`~~
 
-`cd cd riscv-gnu-toolchain/`
+~~`cd cd riscv-gnu-toolchain/`~~
 
-`./configure --prefix=/opt/riscv --with-arch=rv32gc --with-abi=ilp32d`
+~~`./configure --prefix=/opt/riscv --with-arch=rv32gc --with-abi=ilp32d`~~
 
-`sudo make -j16`
+~~`sudo make -j16`~~
+
+`wget wget https://github.com/espressif/crosstool-NG/releases/download/esp-15.1.0_20250607/riscv32-esp-elf-15.1.0_20250607-x86_64-linux-gnu.tar.xz`
+
+`tar -xf riscv32-esp-elf-15.1.0_20250607-x86_64-linux-gnu.tar.xz`
+
+`sudo mv riscv32-esp-elf /opt/`
+
+
 
 ## Install ARM-Toolchain
 
@@ -23,7 +31,7 @@
 
 `sudo mv arm-gnu-toolchain-14.2.rel1-x86_64-arm-none-eabi /opt/`
 
-`echo 'export PATH="/opt/riscv/bin:/opt/arm-gnu-toolchain-14.2.rel1-x86_64-arm-none-eabi/bin:$PATH"' >> ~/.bashrc`
+`echo 'export PATH="/opt/riscv32-esp-elf/bin:/opt/arm-gnu-toolchain-14.2.rel1-x86_64-arm-none-eabi/bin:$PATH"' >> ~/.bashrc`
 
 ## Add Rust-Targets
 
@@ -40,7 +48,7 @@
 
 `cargo install cargo-xtask`
 
-`cargo xtask gen riscv32imac-unknown-none-elf`
+`cargo xtask gen -e riscv32imac-unknown-none-elf`
 
 `cargo xtask gen thumbv7em-none-eabi`
 
