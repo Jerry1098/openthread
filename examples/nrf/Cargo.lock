@@ -844,7 +844,7 @@ name = "openthread"
 version = "0.1.0"
 dependencies = [
  "bitflags 2.8.0",
- "defmt 0.3.100",
+ "defmt 1.0.1",
  "embassy-futures",
  "embassy-net-driver-channel",
  "embassy-nrf",
