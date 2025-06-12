@@ -40,8 +40,8 @@
 
 `cargo install cargo-xtask`
 
-`cargo xtast gen riscv32imac-unknown-none-elf`
+`cargo xtask gen riscv32imac-unknown-none-elf`
 
-`cargo xtast gen thumbv7em-none-eabi`
+`cargo xtask gen thumbv7em-none-eabi`
 
-`cargo xtast gen thumbv6m-none-eabi`
+`cargo xtask gen thumbv6m-none-eabi`
