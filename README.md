@@ -5,6 +5,8 @@
 [![Documentation](https://img.shields.io/badge/docs-esp--rs-brightgreen)](https://esp-rs.github.io/esp-rs/esp-openthread/index.html)
 [![Matrix](https://img.shields.io/matrix/esp-rs:matrix.org?label=join%20matrix&color=BEC5C9&logo=matrix)](https://matrix.to/#/#esp-rs:matrix.org)
 
+
+ Small Test
 Platform-agnostic, async Rust bindings for the [`OpenThread`](https://openthread.io/) library.
 
 Tailored for Rust embedded baremetal.
