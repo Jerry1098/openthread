@@ -6,7 +6,7 @@
 [![Matrix](https://img.shields.io/matrix/esp-rs:matrix.org?label=join%20matrix&color=BEC5C9&logo=matrix)](https://matrix.to/#/#esp-rs:matrix.org)
 
 
- Small Test 5
+ Small Test 6
 Platform-agnostic, async Rust bindings for the [`OpenThread`](https://openthread.io/) library.
 
 Tailored for Rust embedded baremetal.
